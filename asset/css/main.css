@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 *,
 *::before,
 *::after {
@@ -9,6 +10,7 @@
 :root {
   --font-poppin: 'Poppins', sans-serif;
   --font-sora: 'Sora', sans-serif;
+  --font-aclonica: 'Aclonica', sans-serif;
   --black: #000;
   --white: #fff;
   --brand-color: #02643d;
@@ -260,7 +262,8 @@ nav .nav-links .nav-link:hover span {
   background: var(--brand-color);
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -271,17 +274,71 @@ nav .nav-links .nav-link:hover span {
           box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, 0.5);
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-size: 15px;
   font-weight: bolder;
   color: var(--brand-color);
 }
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
   left: 30px;
 }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
   right: 30px;
+}
+
+.footer-banner {
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-banner .banner-bg {
+  position: relative;
+  padding: 1em 3em;
+  background: #0952ee;
+  /* fallback for old browsers */
+}
+
+.footer-banner .banner-bg .banner-title {
+  font-size: 4em;
+  font-family: var(--font-aclonica);
+  color: var(--white);
+  letter-spacing: 4px;
+}
+
+.footer-banner .banner-bg .queries, .footer-banner .banner-bg .shoping {
+  position: absolute;
+  display: inline-block;
+  text-decoration: none;
+  padding: 2em 3em;
+  font-size: 1.2em;
+  background: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  border-radius: 99px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.footer-banner .banner-bg .queries:hover, .footer-banner .banner-bg .shoping:hover {
+  letter-spacing: 2px;
+}
+
+.footer-banner .banner-bg .queries {
+  bottom: 30%;
+  right: 27%;
+}
+
+.footer-banner .banner-bg .shoping {
+  padding-right: 10em;
+  bottom: 30%;
+  right: -5%;
 }
 /*# sourceMappingURL=main.css.map */
