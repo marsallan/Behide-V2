@@ -298,10 +298,33 @@ nav .nav-links .nav-link:hover span {
 }
 
 .footer-banner .banner-bg {
+  background: #2980B9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), color-stop(#6DD5FA), to(#2980B9));
+  background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: relative;
   padding: 1em 3em;
-  background: #0952ee;
+  border-top-right-radius: 399px;
+  border-bottom-right-radius: 399px;
   /* fallback for old browsers */
+}
+
+.footer-banner .banner-bg .link-container {
+  background: #2980B9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6DD5FA), to(#2980B9));
+  background: linear-gradient(to right, #6DD5FA, #2980B9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  padding: 2em;
+  top: 21%;
+  right: 0%;
+  border-radius: 99px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .footer-banner .banner-bg .banner-title {
@@ -311,34 +334,29 @@ nav .nav-links .nav-link:hover span {
   letter-spacing: 4px;
 }
 
-.footer-banner .banner-bg .queries, .footer-banner .banner-bg .shoping {
-  position: absolute;
+.footer-banner .banner-bg .queries,
+.footer-banner .banner-bg .shoping {
   display: inline-block;
   text-decoration: none;
   padding: 2em 3em;
   font-size: 1.2em;
-  background: var(--white);
-  color: var(--black);
+  background: #2980B9;
+  color: var(--white);
   font-weight: 600;
   border-radius: 99px;
   -webkit-transition: 200ms;
   transition: 200ms;
   -webkit-transform-origin: left;
           transform-origin: left;
+  border: 4px solid #6DD5FA;
 }
 
-.footer-banner .banner-bg .queries:hover, .footer-banner .banner-bg .shoping:hover {
-  letter-spacing: 2px;
-}
-
-.footer-banner .banner-bg .queries {
-  bottom: 30%;
-  right: 27%;
+.footer-banner .banner-bg .queries:hover,
+.footer-banner .banner-bg .shoping:hover {
+  border-color: #fff;
 }
 
 .footer-banner .banner-bg .shoping {
-  padding-right: 10em;
-  bottom: 30%;
-  right: -5%;
+  margin-left: 1em;
 }
 /*# sourceMappingURL=main.css.map */
